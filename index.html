@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12th Economics One Mark Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <p class="tag">Economics Quiz</p>
+        <h1>12th Economics One Mark Guessing Game</h1>
+      </header>
+
+      <main class="card">
+        <div id="start-screen" class="screen active">
+          <p class="intro">
+            Test your economics knowledge with 12 quick one-mark questions.
+          </p>
+          <button id="start-btn" class="primary-btn">Start Game</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+          <div class="quiz-meta">
+            <span id="question-number">Question 1</span>
+            <span id="score-board">Score: 0</span>
+          </div>
+
+          <h2 id="question-text">Question text</h2>
+
+          <div id="options" class="options"></div>
+
+          <div id="feedback" class="feedback hidden"></div>
+
+          <button id="next-btn" class="primary-btn hidden">Next Question</button>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+          <h2>Quiz Completed!</h2>
+          <p id="result-text" class="result-text"></p>
+          <button id="restart-btn" class="primary-btn">Play Again</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
